@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+$textColor : rgb(145, 145, 145);
+
+body {
+    background-color: #dfdfdf;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 4px;
+    transition: all 200ms;
+
+    .post-title,
+    .post-description {
+        color: $textColor;
+    }
+
+    .post-title {
+        font-weight: bold;
+    }
+}

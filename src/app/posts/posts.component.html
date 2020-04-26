@@ -1,0 +1,12 @@
+<div *ngIf="posts && posts.length" class="main-container col-12 d-flex flex-wrap justify-content-center align-items-center px-0 py-5">
+    <div class="posts-wraper col-sm-10 col-md-8 col-lg-6 d-flex flex-wrap px-0 py-5">
+
+        <!-- Post card -->
+        <a *ngFor="let post of posts" class="post-card col-12 p-3 mb-3" [routerLink]='["/posts", post.id]'>
+            <h3 class="post-title">{{post['title'] | shortSentence:45}}</h3>
+            <span class="post-description">{{post['body'] | shortSentence:75}}</span>
+        </a>
+        <!-- End of post card -->
+
+    </div>
+</div>
